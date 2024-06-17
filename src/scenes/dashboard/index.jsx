@@ -17,7 +17,7 @@ const Dashboard = () => {
   const [userdata, setUserdata] = useState({});
   const getUser = async () => {
     try {
-      const response = await axios.get(`http://${process.env.SERVER_URL}/login/sucess`, {
+      const response = await axios.get(`https://${process.env.SERVER_URL}/login/sucess`, {
         withCredentials: true,
       });
 
