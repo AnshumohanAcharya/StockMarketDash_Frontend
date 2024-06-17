@@ -10,7 +10,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 
 const Topbar = () => {
   const logout = () => {
-    window.open(`https://${process.env.SERVER_URL}/logout`, "_self");
+    window.open(`http://localhost:8000/logout`, "_self");
   };
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
