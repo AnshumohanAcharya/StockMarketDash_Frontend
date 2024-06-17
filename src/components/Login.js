@@ -3,7 +3,7 @@ import "./login.css";
 
 const Login = () => {
   const loginwithgoogle = () => {
-    window.open(`https://stockmarketdash-frontend.onrender.com//auth/google/callback`, "_self");
+    window.open(`https://stockmarketdash-frontend.onrender.com/auth/google/callback`, "_self");
   };
   return (
       <div className="login-page">
