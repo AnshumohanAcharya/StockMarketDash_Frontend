@@ -3,7 +3,7 @@ import "./login.css";
 
 const Login = () => {
   const loginwithgoogle = () => {
-    window.open(`http://${process.env.SERVER_URL}/auth/google/callback`, "_self");
+    window.open(`http://localhost:8000/auth/google/callback`, "_self");
   };
   return (
     <>
