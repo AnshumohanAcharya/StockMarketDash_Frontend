@@ -15,26 +15,21 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route
-        path="/*"
-        element={
-          <ColorModeContext.Provider value={colorMode}>
-            <ThemeProvider theme={theme}>
-              <CssBaseline />
-              <div className="app">
-                <Sidebar isSidebar={isSidebar} />
-                <main className="content">
-                  <Topbar setIsSidebar={setIsSidebar} />
-                  <Routes>
-                    <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="/search" element={<StockSearchPage />} />
-                  </Routes>
-                </main>
-              </div>
-            </ThemeProvider>
-          </ColorModeContext.Provider>
-        }
-      />
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <div className="app">
+            <Sidebar isSidebar={isSidebar} />
+            <main className="content">
+              <Topbar setIsSidebar={setIsSidebar} />
+              <Routes>
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/search" element={<StockSearchPage />} />
+              </Routes>
+            </main>
+          </div>
+        </ThemeProvider>
+      </ColorModeContext.Provider>
     </Routes>
   );
 }

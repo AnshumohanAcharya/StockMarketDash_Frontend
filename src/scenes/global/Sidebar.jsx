@@ -31,7 +31,7 @@ const Sidebar = () => {
   const [userdata, setUserdata] = useState({});
   const getUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/login/sucess`, {
+      const response = await axios.get(`https://stockmarketdash-frontend.onrender.com/login/sucess`, {
         withCredentials: true,
       });
 
