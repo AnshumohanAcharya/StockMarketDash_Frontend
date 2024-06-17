@@ -10,7 +10,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 
 const Topbar = () => {
   const logout = () => {
-    window.open(`http://${process.env.SERVER_URL}/logout`, "_self");
+    window.open(`https://stockmarketdash-frontend.onrender.com/logout`, "_self");
   };
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
