@@ -27,8 +27,8 @@ function App() {
                 <main className="content">
                   <Topbar setIsSidebar={setIsSidebar} />
                   <Routes>
-                    <Route path="dashboard" element={<Dashboard />} />
-                    <Route path="search" element={<StockSearchPage />} />
+                    <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/search" element={<StockSearchPage />} />
                   </Routes>
                 </main>
               </div>
