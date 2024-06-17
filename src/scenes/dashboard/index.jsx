@@ -27,7 +27,7 @@ const Dashboard = () => {
     }
   };
   const logout = () => {
-    window.open(`http://${process.env.SERVER_URL}/logout`, "_self");
+    window.open(`http://https://stockmarketdash-frontend.onrender.com/logout`, "_self");
   };
   useEffect(() => {
     getUser();
